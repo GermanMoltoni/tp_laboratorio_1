@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1461808572 source:c:\users\german\desktop\tps terminado ok\funciones.c
+	"funciones.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1461808469 c:\users\german\desktop\tps terminado ok\funciones.h
+
+1461808493 source:c:\users\german\desktop\tps terminado ok\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
+1461898207 source:c:\users\german\desktop\tps terminado ok\tp2 andando no borrar\funciones.c
+	"funciones.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1461897448 c:\users\german\desktop\tps terminado ok\tp2 andando no borrar\funciones.h
+
+1461897696 source:c:\users\german\desktop\tps terminado ok\tp2 andando no borrar\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+
