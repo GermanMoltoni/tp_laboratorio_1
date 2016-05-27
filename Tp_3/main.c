@@ -68,7 +68,7 @@ int main()
                 case 4:
                     if(occupatedMovie(peliculas,P)) // Verifica si hay alguna pelicula cargada para poder generar la pagina web
                     {
-                        while(getString(title,"Nombre de archivo web: ","\nIngrese un nombre Valido: ",0,20) == -1);
+                        while(getString(title,"Nombre de archivo web: ","Ingrese un nombre Valido",0,20) == -1);
                         if(generarPagina(peliculas,P,title))
                             printf("No se ha generado la pagina\n");
                          else

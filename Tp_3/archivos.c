@@ -121,11 +121,10 @@ int leerBin(char* nombre,EMovie* movies,int length,FILE* pArch)
 int crearArchivoWeb(char* name,EMovie* movies,int length)
 {
     FILE* pArch;
-    int i;
-    int flag=1;
-    char auxText[100];
     FILE* pAux1;
     FILE* pAux2;
+    long int i;
+    int flag=1;
     strcat(name,".html");
     if(movies!=NULL && length >0)
     {
@@ -136,43 +135,70 @@ int crearArchivoWeb(char* name,EMovie* movies,int length)
             pArch = fopen(name, "w");
             if(pArch != NULL )
             {
-                i=1;
-                while(!feof(pAux1))
+                if(fileCopy(pAux1,pArch))
                 {
-                    fgets(auxText,i,pAux1);
-                    fputs(auxText,pArch);
-                    i++;
-                }
-                for(i=0;i<length;i++)
-                {
-                    if((movies+i)->state == 1)
+                    for(i=0;i<length;i++)
                     {
-                        fputs("\n\t\t\t<article class='col-md-4 article-intro'>\n\t\t\t\t<a href='#'>",pArch);
-                        fprintf(pArch,"\n\t\t\t\t\t<img class='img-responsive img-rounded' src='%s' alt=''>",((movies+i)->linkImagen));
-                        fprintf(pArch,"\n\t\t\t\t</a>\n\t\t\t\t<h3>\n\t\t\t\t\t<a href='#'>%s</a>\n\t\t\t\t</h3>\n",((movies+i)->titulo));
-                        fprintf(pArch,"\t\t\t\t<ul>\n\t\t\t\t\t<li>Género:%s</li>\n\t\t\t\t\t<li>Puntaje:%d</li>\n\t\t\t\t\t<li>Duración:%d</li>\n\t\t\t\t</ul>\n",((movies+i)->genero),((movies+i)->puntaje),((movies+i)->duracion));
-                        fprintf(pArch,"\t\t\t\t<p>%s</p>\n\t\t\t</article>\n",((movies+i)->descripcion));
+                        if((movies+i)->state == 1)
+                        {
+                            fputs("\n\t\t\t<article class='col-md-4 article-intro'>\n\t\t\t\t<a href='#'>",pArch);
+                            fprintf(pArch,"\n\t\t\t\t\t<img class='img-responsive img-rounded' src='%s' alt=''>",((movies+i)->linkImagen));
+                            fprintf(pArch,"\n\t\t\t\t</a>\n\t\t\t\t<h3>\n\t\t\t\t\t<a href='#'>%s</a>\n\t\t\t\t</h3>\n",((movies+i)->titulo));
+                            fprintf(pArch,"\t\t\t\t<ul>\n\t\t\t\t\t<li>Género:%s</li>\n\t\t\t\t\t<li>Puntaje:%d</li>\n\t\t\t\t\t<li>Duración:%d</li>\n\t\t\t\t</ul>\n",((movies+i)->genero),((movies+i)->puntaje),((movies+i)->duracion));
+                            fprintf(pArch,"\t\t\t\t<p>%s</p>\n\t\t\t</article>\n",((movies+i)->descripcion));
+                        }
+                    }
+                    if(fileCopy(pAux2,pArch))
+                    {
+                        if(!cerrarArchivo(pArch))
+                            printf("No se cerro el archivo %s\n",name);
+                        else
+                            flag=0;
                     }
                 }
-                i=1;
-                while(!feof(pAux2))
-                {
-                    fgets(auxText,i,pAux2);
-                    fputs(auxText,pArch);
-                    i++;
-                }
-                if(!cerrarArchivo(pArch))
-                    printf("No se cerraro el archivo %s\n",name);
-            }
-            else
-                printf("Ocurrio un error con el archivo %s",name);
-            if(!cerrarArchivo(pAux1) || !cerrarArchivo(pAux2))
-                printf("No se cerraron los bloques html\n");
-            else
-                flag=0;
+             }
+             else
+                 printf("Ocurrio un error con el archivo %s",name);
         }
-
     }
     return flag;
 }
+
+
+/** Copia contenido de un achivo en otro,
+ *
+ * \param origen es el nombre del archivo desde el que se copian los datos
+ * \param pArch es el puntero al archivo al que se copian los datos
+ * \return 1 si no hubo error, 0 si hubo
+ *
+ */
+
+int fileCopy(FILE* pAux,FILE* pArch)
+{
+    char* auxText;
+    long int length;
+    int flag=0;
+    if(pAux!= NULL && pArch != NULL)// verifico que no sean null los punteros a archivos
+    {
+        if(fseek(pAux,0L,SEEK_END) == 0)// me posiciono en el fin del archivo
+        {
+            length=ftell(pAux);// obtengo la cantidad bytes del archivo desde el comienzo a la posicion en la que se encuentra
+            rewind(pAux);// me posiciono nuevamente en el comienzo de archivo
+            auxText=(char*)malloc(length);//reservo espacio en memoria para los bytes leidos
+            if(auxText != NULL)
+            {
+                while(!feof(pAux))//mientras no sea fin de archivo
+                {
+                    fgets(auxText,length,pAux);//guardo la cadena del archivo en auxText
+                    fputs(auxText,pArch);//copio en Parch la cadena de Auxtext
+
+                }
+                if(cerrarArchivo(pAux))
+                    flag=1;
+            }
+        }
+    }
+    return flag;
+}
+
 
