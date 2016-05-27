@@ -1,0 +1,248 @@
+# depslib dependency file v1.0
+1464062731 source:c:\users\german\desktop\tp_3_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464063625 c:\users\german\desktop\tp_3_cascara\funciones.h
+
+1464058857 source:c:\users\german\desktop\tp_3_cascara\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464006546 c:\users\german\desktop\tp_3_cascara\input.h
+
+1464062827 source:c:\users\german\desktop\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1464061011 source:c:\users\german\desktop\tp_3_cascara\archivos.c
+	<stdio.h>
+
+1464058858 source:f:\tp_3_cascara\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464006546 f:\tp_3_cascara\input.h
+
+1464104218 source:f:\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464095976 f:\tp_3_cascara\funciones.h
+
+1464104668 source:f:\tp_3_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464092998 f:\tp_3_cascara\archivos.h
+	<stdio.h>
+
+1464104218 source:f:\tp_3_cascara\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464147966 source:i:\tp_3_cascara\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464120342 i:\tp_3_cascara\funciones.h
+
+1464058858 source:i:\tp_3_cascara\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464006546 i:\tp_3_cascara\input.h
+
+1464147184 source:i:\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464092998 i:\tp_3_cascara\archivos.h
+	<stdio.h>
+
+1464147740 source:i:\tp_3_cascara\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464228908 source:c:\users\german\desktop\tp_3_funciona no tocar\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464227663 c:\users\german\desktop\tp_3_funciona no tocar\funciones.h
+
+1464229501 source:c:\users\german\desktop\tp_3_funciona no tocar\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464216962 c:\users\german\desktop\tp_3_funciona no tocar\input.h
+
+1464229352 source:c:\users\german\desktop\tp_3_funciona no tocar\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464228194 source:c:\users\german\desktop\tp_3_funciona no tocar\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464216941 c:\users\german\desktop\tp_3_funciona no tocar\archivos.h
+	<stdio.h>
+
+1464229502 source:f:\tp_3_funciona no tocar final terminado andando\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464216964 f:\tp_3_funciona no tocar final terminado andando\input.h
+
+1464261234 source:f:\tp_3_funciona no tocar final terminado andando\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464227664 f:\tp_3_funciona no tocar final terminado andando\funciones.h
+
+1464261362 source:f:\tp_3_funciona no tocar final terminado andando\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464216942 f:\tp_3_funciona no tocar final terminado andando\archivos.h
+	<stdio.h>
+
+1464261234 source:f:\tp_3_funciona no tocar final terminado andando\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464267042 source:c:\users\hugo\desktop\tp_3_funcion\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464227664 c:\users\hugo\desktop\tp_3_funcion\funciones.h
+
+1464263132 source:c:\users\hugo\desktop\tp_3_funcion\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464216964 c:\users\hugo\desktop\tp_3_funcion\input.h
+
+1464268799 source:c:\users\hugo\desktop\tp_3_funcion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464216942 c:\users\hugo\desktop\tp_3_funcion\archivos.h
+	<stdio.h>
+
+1464268960 source:c:\users\hugo\desktop\tp_3_funcion\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464292334 source:c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464292334 c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\funciones.h
+
+1464292334 source:c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464216942 c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\archivos.h
+	<stdio.h>
+
+1464292795 source:c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464293251 source:c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464216964 c:\users\german\desktop\tp_3_funciona no tocar final terminado andando\input.h
+
+1464314426 source:i:\tp_3_funciona no tocar final terminado andando\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464312754 i:\tp_3_funciona no tocar final terminado andando\funciones.h
+
+1464310412 source:i:\tp_3_funciona no tocar final terminado andando\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464307708 i:\tp_3_funciona no tocar final terminado andando\input.h
+
+1464314442 source:i:\tp_3_funciona no tocar final terminado andando\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464307708 i:\tp_3_funciona no tocar final terminado andando\archivos.h
+	<stdio.h>
+
+1464312754 source:i:\tp_3_funciona no tocar final terminado andando\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464317546 source:i:\tp_3_funciona no tocar final terminado andando\tp3\funciones.c
+	"funciones.h"
+	<stdio.h>
+
+1464312754 i:\tp_3_funciona no tocar final terminado andando\tp3\funciones.h
+
+1464310412 source:i:\tp_3_funciona no tocar final terminado andando\tp3\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464307708 i:\tp_3_funciona no tocar final terminado andando\tp3\input.h
+
+1464314442 source:i:\tp_3_funciona no tocar final terminado andando\tp3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464307708 i:\tp_3_funciona no tocar final terminado andando\tp3\archivos.h
+	<stdio.h>
+
+1464317546 source:i:\tp_3_funciona no tocar final terminado andando\tp3\archivos.c
+	<stdio.h>
+	"funciones.h"
+
