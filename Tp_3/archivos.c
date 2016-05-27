@@ -167,7 +167,7 @@ int crearArchivoWeb(char* name,EMovie* movies,int length)
 
 /** Copia contenido de un achivo en otro,
  *
- * \param origen es el nombre del archivo desde el que se copian los datos
+ * \param pAux es el puntero al archivo desde el que se copian los datos
  * \param pArch es el puntero al archivo al que se copian los datos
  * \return 1 si no hubo error, 0 si hubo
  *
