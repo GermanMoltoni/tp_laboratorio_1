@@ -1,6 +1,8 @@
 #include "funciones.h"
 #include <stdio.h>
-
+#include <string.h>
+#include "input.h"
+#include "archivos.h"
 /** Muestra texto de menu y pide una opcion
  *
  * \param textoMenu es el texto a mostrar
@@ -153,11 +155,6 @@ int modificarPelicula(EMovie* movies,int length)
     int free;
     int flag=1;
     char title[20];
-    char genero[20];
-    char descripcion[240];
-    char linkImagen[240];
-    int puntaje;
-    int duracion;
     EMovie movie;
     if(movies != NULL && length>0)
     {

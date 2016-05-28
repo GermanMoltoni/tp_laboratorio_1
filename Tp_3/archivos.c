@@ -61,7 +61,6 @@ int cargarHaciaArchivo(char* name,EMovie* movies,int length)
 {
     FILE* pArch;
     int flag=0;
-    int test;
     pArch=fopen(name,"wb");
     if(movies != NULL && length>0)
     {

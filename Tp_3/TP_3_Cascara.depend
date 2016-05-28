@@ -246,3 +246,34 @@
 	<stdio.h>
 	"funciones.h"
 
+1464310412 source:c:\users\german\music\tp_3\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+
+1464307708 c:\users\german\music\tp_3\input.h
+
+1464340106 source:c:\users\german\music\tp_3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"archivos.h"
+
+1464312754 c:\users\german\music\tp_3\funciones.h
+
+1464340454 c:\users\german\music\tp_3\archivos.h
+	<stdio.h>
+
+1464401216 source:c:\users\german\music\tp_3\archivos.c
+	<stdio.h>
+	"funciones.h"
+
+1464401271 source:c:\users\german\music\tp_3\funciones.c
+	"funciones.h"
+	<stdio.h>
+	<string.h>
+	"input.h"
+	"archivos.h"
+
