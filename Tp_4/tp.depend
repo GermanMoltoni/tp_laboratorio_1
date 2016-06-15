@@ -1,0 +1,329 @@
+# depslib dependency file v1.0
+1466003296 source:f:\tp44\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1465917738 .h"
+
+1464873806 f:\tp44\arraylist.h
+
+1465836918 source:f:\tp44\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+
+1465915824 
+
+1466003838 f:\tp44\lib.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+
+1465701860 f:\tp44\input.h
+
+1466004236 source:f:\tp44\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"ArrayList.h"
+
+1466003840 source:f:\tp44\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+
+1465827114 f:\tp44\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+
+1466003296 source:f:\tp44\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+
+1466029966 source:g:\tp44\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1464873806 g:\tp44\arraylist.h
+
+1466030060 source:g:\tp44\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+
+1466029966 g:\tp44\lib.h
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"ArrayList.h"
+
+1466026666 g:\tp44\input.h
+
+1466026900 source:g:\tp44\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	"input.h"
+	"archivos.h"
+
+1466026666 g:\tp44\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	"archivos.h"
+
+1466029472 source:g:\tp44\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"input.h"
+	"ArrayList.h"
+
+1466003296 source:/Volumes/MULTIBOOT/tp44/ArrayList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1464873806 /Volumes/MULTIBOOT/tp44/ArrayList.h
+
+1466012884 source:/Volumes/MULTIBOOT/tp44/input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+
+1466012514 /Volumes/MULTIBOOT/tp44/lib.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"ArrayList.h"
+
+1466005012 /Volumes/MULTIBOOT/tp44/input.h
+
+1466012514 source:/Volumes/MULTIBOOT/tp44/main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	"input.h"
+	"archivos.h"
+
+1466011540 /Volumes/MULTIBOOT/tp44/menu.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	"archivos.h"
+
+1466013584 source:/Volumes/MULTIBOOT/tp44/lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"ArrayList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"input.h"
+	"ArrayList.h"
+
+1466014098 source:/Volumes/MULTIBOOT/tp44/menu.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	"input.h"
+	"archivos.h"
+
+1465890256 source:e:\tp44\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1464855806 e:\tp44\arraylist.h
+
+1465818918 source:e:\tp44\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+
+1465994514 e:\tp44\lib.h
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"ArrayList.h"
+
+1465987012 e:\tp44\input.h
+
+1465923332 source:e:\tp44\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"ArrayList.h"
+
+1465929676 source:e:\tp44\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	"input.h"
+	"archivos.h"
+
+1465993540 e:\tp44\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	"archivos.h"
+
+1465929676 source:e:\tp44\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	"input.h"
+	"archivos.h"
+
+1466011286 source:/Volumes/MULTIBOOT/tp44/archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	<string.h>
+
+1466005484 /Volumes/MULTIBOOT/tp44/archivos.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"menu.h"
+	"lib.h"
+	<string.h>
+
+1465987484 e:\tp44\archivos.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"menu.h"
+	"lib.h"
+	<string.h>
+
+1466005484 g:\tp44\archivos.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"menu.h"
+	"lib.h"
+	<string.h>
+
+1466029720 source:g:\tp44\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	"input.h"
+	"archivos.h"
+
+1466026666 source:g:\tp44\archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	<string.h>
+
