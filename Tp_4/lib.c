@@ -103,7 +103,7 @@ int modificarAvion(ArrayList* aviones,ArrayList* vuelos)
         avion=(eAvion*)aviones->get(aviones,buscarMatricula(aviones,matricula));
         if(avion != NULL)
         {
-            if(verificarUsoAvion(vuelos,matricula,"Modificar")  == -1)
+            if(verificarUsoAvion(vuelos,matricula,"Modificar")  == 1)
             {
                 while(getString(avion->modelo,"Ingresar Modelo de Avion: ","ERROR",0,20)== -1);
                 while(getString(avion->fabricante,"Ingresar Fabricante de Avion: ","ERROR",0,40)== -1);
@@ -140,13 +140,13 @@ int reemplazarAvion(ArrayList* aviones,ArrayList* vuelos)
         aux=buscarMatricula(aviones,matricula);
          if(aux != -1)
         {
-            if(verificarUsoAvion(vuelos,matricula,"Reemplazar") == -1)
+            if(verificarUsoAvion(vuelos,matricula,"Reemplazar") == 1)
             {
-                avion=(eAvion*)aviones->get(aviones,retorno);
+                avion=(eAvion*)aviones->get(aviones,aux);
                 printf("Matricula: %s\nModelo: %s\nFabricante: %s\nCapacidad Maxima de Pasajeros: %d\nAutonomia de Vuelo:%d\nEmpresa: %s \n\n",avion->matricula,avion->modelo,avion->fabricante,avion->capacidadMax,avion->autonomia,avion->empresa);
                 printf("Avion Eliminado,Ingrese un nuevo Avion\n");
                 strcpy(avion->matricula," ");
-                if(!aviones->set(aviones,retorno,altaAvion(aviones)))
+                if(!aviones->set(aviones,aux,altaAvion(aviones)))
                     retorno=0;
             }
         }
@@ -204,7 +204,7 @@ int modificarVuelo(ArrayList* vuelos,ArrayList* aviones)
     return retorno;
 }
 
-//----------------------BUSQUEDA--------------------------
+
 /** Busca la matricula  solicitada
  *
  * \param *aviones es el arraylist que contiene los punteros a aviones
@@ -267,7 +267,7 @@ int buscarIdVuelo(ArrayList* vuelos,int idVuelo)
 }
 
 
-//-------BAJAS----------------
+
 /** Da de baja un avion y lo muestra
  *
  * \param *aviones es el arraylist que contiene el array de punteros a aviones
@@ -298,7 +298,7 @@ int bajaAvion(ArrayList* aviones,ArrayList* vuelos)
                 salida=0;
         }
         while(salida);
-        if(verificarUsoAvion(vuelos,matricula,"Eliminar") == -1)
+        if(verificarUsoAvion(vuelos,matricula,"Eliminar") == 1)
         {
            avion=aviones->pop(aviones,index);
             printf("******Avion Eliminado******\n");
@@ -313,7 +313,7 @@ int bajaAvion(ArrayList* aviones,ArrayList* vuelos)
  *
  * \param *aviones es el arraylist que contiene el array de punteros a aviones
  * \param *vuelos es el arraylist que contiene el array de punteros a vuelo
- * \return -1 error / 0 Ok
+ * \return -1 error / 0 Utilizo matricula / 1 no se utilizo
  *
  */
 
@@ -332,7 +332,10 @@ int verificarUsoAvion(ArrayList* vuelos,char* matricula,char*uso)
                 printf("Dar de Baja Vuelo %d para %s el Avion\n",vuelo->idVuelo,uso);
                 aux=0;
             }
+
         }
+        if(aux==-1)
+            aux=1;
     }
     return aux;
 }
@@ -557,52 +560,60 @@ void printVueloEmpresa(ArrayList* aviones,ArrayList* vuelos)
  *
  */
 
-void listarSegunEstado(ArrayList* vuelos,ArrayList* aviones)
+void listarSegunEstado(ArrayList* vuelos)
 {
     int from=-1;
-    int to=0;
+    int to=-1;
     ArrayList* aux;
     eVuelo* vuelo;
     char estado[20];
     int i,j;
     if(vuelos!= NULL)
     {
+        al_sort(vuelos,comparaEstadoVuelos,0);
         strcpy(estado,validarEstado());
-        for(i=0;i<=vuelos->len(vuelos);i++)
-        {
-            vuelo=(eVuelo*)al_get(vuelos,i);
-            if(strcmp(vuelo->estado,estado) == 0)
-            {
-                from=i;
-                break;
-            }
-        }
+        for(i=0;i<vuelos->len(vuelos);i++)
+         {
+             vuelo=(eVuelo*)vuelos->get(vuelos,i);
+             if(vuelo != NULL)
+             {
+                 if(strcmp(vuelo->estado,estado) == 0)
+                 {
+                    from=i;
+                     break;
+                 }
+             }
+         }
         if(from != -1)
         {
-            for(j=from+1;j<=vuelos->len(vuelos);j++)
+            to=from;
+            for(j=from+1;j<vuelos->len(vuelos);j++)
             {
-                vuelo=(eVuelo*)al_get(vuelos,i);
-                if( strcmp(vuelo->estado,estado) != 0 )
+                vuelo=(eVuelo*)vuelos->get(vuelos,j);
+                if(vuelo != NULL)
                 {
-                    to=j;
-                    break;
+                    if(strcmp(vuelo->estado,estado) == 0)
+                    {
+                            to=j;
+                    }
+                    else
+                        break;
                 }
-                else
-                    to=i;
             }
-
-            aux=vuelos->subList(vuelos,from,to);
-            if(aux != NULL)
-            {
-                printArrayVuelos(aux,estado);
-                al_deleteArrayList(aux);
-            }
+                aux=vuelos->subList(vuelos,from,to);
+                if(aux != NULL)
+                {
+                    printArrayVuelos(aux,estado);
+                    al_deleteArrayList(aux);
+                }
         }
         else
             printf("No hay aviones para el estado elegido\n");
+        }
+
 
     }
-}
+
 
 
 /** Solicita un estado y lo valida   ARRIVO - PARTIDA - CANCELADO- DEMORADO

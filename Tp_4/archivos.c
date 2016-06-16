@@ -128,6 +128,15 @@ int cargarDesdeArchivo(ArrayList* aux,char* nombre)
 
             }
         }
+        else
+        {
+            cerrarArchivo(pArch);
+            pArch=fopen(nombre,"wb");
+            if(aux != NULL)
+                cerrarArchivo(pArch);
+
+        }
+
     }
     else
         printf("ERROR con los datos pasados\n");

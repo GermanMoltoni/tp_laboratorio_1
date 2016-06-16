@@ -39,7 +39,7 @@ int comparaEstadoVuelos(void* vueloA,void* vueloB);
 int comparaEmpresaAvion(void* avionA,void* avionB);
 int comparaAutonomiaAvion(void* avionA,void* avionB);
 void printVueloEmpresa(ArrayList* aviones,ArrayList* vuelos);
-void listarSegunEstado(ArrayList* vuelos,ArrayList* aviones);
+void listarSegunEstado(ArrayList* vuelo);
 char* validarEstado(void);
 int salir(ArrayList* vuelos,ArrayList* aviones);
 void printArrayVuelos(ArrayList* vuelos,char* estado);

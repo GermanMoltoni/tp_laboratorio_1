@@ -312,8 +312,7 @@ void Listar(ArrayList* aviones,ArrayList* vuelos)
                 {
                     printf("******Listar Nomina de Vuelos Por  Estado******\n");
                     aux=al_clone(vuelos);
-                    aux->sort(aux,comparaEstadoVuelos,0);
-                    listarSegunEstado(aux,aviones);
+                    listarSegunEstado(aux);
                 }
                 else
                     printf("No hay Vuelos o aviones cargados\n");

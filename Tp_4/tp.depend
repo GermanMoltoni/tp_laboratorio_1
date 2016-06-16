@@ -327,3 +327,76 @@
 	"menu.h"
 	<string.h>
 
+1466029966 source:c:\users\german\desktop\tp_4\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1464873806 c:\users\german\desktop\tp_4\arraylist.h
+
+1466030060 source:c:\users\german\desktop\tp_4\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lib.h"
+	"input.h"
+
+1466043072 c:\users\german\desktop\tp_4\lib.h
+	<stdio.h>
+	<stdlib.h>
+	"input.h"
+	"ArrayList.h"
+
+1466026666 c:\users\german\desktop\tp_4\input.h
+
+1466043971 source:c:\users\german\desktop\tp_4\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+	"input.h"
+	"ArrayList.h"
+
+1466026900 source:c:\users\german\desktop\tp_4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	"input.h"
+	"archivos.h"
+
+1466026666 c:\users\german\desktop\tp_4\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"lib.h"
+	"archivos.h"
+
+1466005484 c:\users\german\desktop\tp_4\archivos.h
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"menu.h"
+	"lib.h"
+	<string.h>
+
+1466043056 source:c:\users\german\desktop\tp_4\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<strings.h>
+	"ArrayList.h"
+	"lib.h"
+	"input.h"
+	"archivos.h"
+
+1466039833 source:c:\users\german\desktop\tp_4\archivos.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
+	"ArrayList.h"
+	"menu.h"
+	<string.h>
+
